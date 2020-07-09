@@ -33,9 +33,9 @@ public class UserConTroller {
         return Result.buildSuccess(user);
     }
 
-    @PostMapping("/addUser")
+    @PostMapping("/registry")
     @ApiOperation(value = "用户注册接口", notes = "用户注册接口")
-    public Result addUser(String form) {
+    public Result registry(String form) {
 //        User user = userService.saveAndFlush(form);
 //        System.out.println(user.getId());
         return Result.buildSuccess(null);

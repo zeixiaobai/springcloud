@@ -1,5 +1,8 @@
 server:
-  port: 8081
+  port: 8080
+swagger:
+  enable: true
+  basePackage: org.springcloud.template.usercenter.controller
 # spring连接数据库驱动
 spring:
   datasource:
