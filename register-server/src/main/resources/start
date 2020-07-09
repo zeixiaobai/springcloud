@@ -1,0 +1,15 @@
+SpringFactoriesLoader.loadSpringFactories 加载类路径下所有META-INF/spring.factories 文件。缓存在Map<ClassLoader, MultiValueMap<String, String>> cache；
+
+public static List<String> loadFactoryNames(Class<?> factoryClass, @Nullable ClassLoader classLoader)  获取key为factoryClass全类路径的对应value；
+
+SpringFactoriesLoader.loadFactoryNames(type, classLoader)) --》loadFactoryNames--》loadSpringFactories。
+
+
+new SpringApplication
+    设置this.initializers =   cahce key值为 org.springframework.context.ApplicationContextInitializer
+    设置this.listeners =   cahce key值为 org.springframework.context.ApplicationListener
+    运行 run(String... args) 方法
+    new SpringApplicationRunListeners
+      this.log=logger = LogFactory.getLog(SpringApplication.class)
+      this.listeners = cahce key值为 org.springframework.boot.SpringApplicationRunListener  --》 EventPublishingRunListener
+      运行starting()

@@ -1,0 +1,19 @@
+server:
+  port: 8081
+# spring连接数据库驱动
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://119.23.219.141:3306/template?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: Zjx1991#
+
+  # jpa自动创建不存在的数据表
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: true
+  jackson:
+    serialization:
+      indent_output: false
