@@ -2,8 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e53f591-0ca9-480c-a6c4-391688d0dabd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-center/sql/zxb_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/sql/zxb_sys_menu.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/sql/zxb_sys_role.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/sql/zxb_sys_role_menu.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/sql/zxb_sys_user_role.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/constant/UcErrorConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dao/MenuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dao/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dto/menu/AddMenuDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dto/role/AddRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/test/java/org/springcloud/template/usercenter/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../register-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../register-server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/sql/zxb_user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/sql/zxb_user.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/UserCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/UserCenterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/controller/UserConTroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dao/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dto/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dto/user/LoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dto/RegistryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dto/user/RegistryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/resources/i18n/message.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/resources/i18n/message.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state relative-caret-position="575">
+              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -55,11 +85,21 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dependencies" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dependencies" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -70,8 +110,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -83,9 +121,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -125,18 +166,28 @@
       <workItem from="1572573672450" duration="712000" />
       <workItem from="1594024492558" duration="66000" />
       <workItem from="1594186931440" duration="789000" />
-      <workItem from="1594290029906" duration="200000" />
+      <workItem from="1594290029906" duration="542000" />
+      <workItem from="1594365818935" duration="86000" />
+      <workItem from="1594366195704" duration="235000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1594290313295</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594290313295</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8269000" />
+    <option name="totallyTimeSpent" value="8932000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24626866" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25159913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -145,16 +196,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.3286334" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -170,6 +221,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$MAVEN_REPOSITORY$/org/zxb/zxb/1.0-SNAPSHOT/zxb-1.0-SNAPSHOT.pom">
       <provider selected="true" editor-type-id="text-editor">
@@ -181,10 +236,17 @@
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-dependencies/Finchley.SR1/spring-cloud-dependencies-Finchley.SR1.pom">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-dependencies/Greenwich.SR2/spring-cloud-dependencies-Greenwich.SR2.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state relative-caret-position="575">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
         </state>
       </provider>
     </entry>

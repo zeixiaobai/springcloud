@@ -1,4 +1,4 @@
-package org.springcloud.template.usercenter.dto;
+package org.springcloud.template.usercenter.dto.user;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -22,10 +22,10 @@ public class LoginDTO extends BaseDTO {
 
     @ApiModelProperty(example = "zhangsan", required = true)
     @NotBlank(message = "用户名不能为空")
-    private String nickName;
+    private String userName;
 
     @ApiModelProperty(example = "123456", required = true)
     @NotBlank(message = "密码不能为空")
-    private String loginPassword;
+    private String password;
 
 }

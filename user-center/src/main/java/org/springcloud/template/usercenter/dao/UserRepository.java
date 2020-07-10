@@ -9,17 +9,17 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @author zjx
  * @date 2020-07-09 17:48:56
  */
-public interface UserRepository extends JpaRepository<User,String> {
+public interface UserRepository extends JpaRepository<User, Integer> {
 
     /**
-     * TODO
+     * 通过昵称和登录密码查找用户
      *
+     * @param nickName      用户名
+     * @param password 密码
      * @return {@link User}
-     * @Param nickName  用户名
-     * @Param loginPassword 密码
      * @author zjx
      * @date 2020/07/09 17:58
      */
-    User findByNickNameAndLoginPassword(String nickName, String loginPassword);
+    User findByUserNameAndPassword(String nickName, String password);
 
 }

@@ -19,7 +19,7 @@ import java.util.Date;
  */
 @Data
 @Entity
-@Table(name="zxb_user")
+@Table(name = "zxb_sys_user")
 public class User extends BaseEntity {
     /**
      * 用户id
@@ -29,8 +29,8 @@ public class User extends BaseEntity {
     /**
      * 用户昵称
      */
-    @Column(name = "nick_name")
-    private String nickName;
+    @Column(name = "user_name")
+    private String userName;
     /**
      * 真实姓名
      */
@@ -44,29 +44,13 @@ public class User extends BaseEntity {
     /**
      * 登录密码
      */
-    @Column(name = "login_password")
-    private String loginPassword;
-
-    /**
-     * 支付密码
-     */
-    @Column(name = "pay_password")
-    private String payPassword;
+    @Column(name = "password")
+    private String password;
     /**
      * 手机号码
      */
     @Column(name = "user_mobile")
     private String userMobile;
-    /**
-     * 最后登录时间
-     */
-    @Column(name = "user_lasttime")
-    private Date userLasttime;
-    /**
-     * 最后登录IP
-     */
-    @Column(name = "user_lastip")
-    private String userLastip;
     /**
      * 备注
      */

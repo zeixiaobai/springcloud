@@ -1,14 +1,20 @@
 package org.springcloud.template.usercenter.service.impl;
 
 import org.springcloud.template.usercenter.dao.UserRepository;
-import org.springcloud.template.usercenter.dto.LoginDTO;
-import org.springcloud.template.usercenter.dto.RegistryDTO;
+import org.springcloud.template.usercenter.dto.user.LoginDTO;
+import org.springcloud.template.usercenter.dto.user.RegistryDTO;
 import org.springcloud.template.usercenter.entity.User;
 import org.springcloud.template.usercenter.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * 用户服务实现
+ *
+ * @author zjx
+ * @date 2020-07-10 15:02:14
+ */
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -19,8 +25,8 @@ public class UserServiceImpl implements UserService {
     /**
      * 注册用户
      *
+     * @param dto 注册请求参数
      * @return {@link User}
-     * @Param dto
      * @author zjx
      * @date 2020/07/09 13:52
      */
@@ -28,21 +34,20 @@ public class UserServiceImpl implements UserService {
     public User registry(RegistryDTO dto) {
         User user = new User();
         BeanUtils.copyProperties(dto, user);
-        return user;
+        return userRepository.save(user);
     }
 
     /**
      * 登录
      *
+     * @param dto 登录请求参数
      * @return {@link User}
-     * @Param dto
      * @author zjx
      * @date 2020/07/09 13:53
      */
     @Override
     public User login(LoginDTO dto) {
-        User user = userRepository.findByNickNameAndLoginPassword(dto.getNickName(), dto.getLoginPassword());
-        return user;
+        return userRepository.findByUserNameAndPassword(dto.getUserName(), dto.getPassword());
     }
 
 }
