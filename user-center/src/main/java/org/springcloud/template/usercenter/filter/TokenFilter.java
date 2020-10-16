@@ -65,9 +65,9 @@ public class TokenFilter implements Filter {
         Token tokenBean = tokenMap.get(token);
         if (tokenBean != null) {
             if (System.currentTimeMillis() - tokenBean.getExpireTime() <= 1000 * 60 * 5) {
-                tokenBean.setExpireTime(System.currentTimeMillis());
-                chain.doFilter(request, response);
-                return;
+                    tokenBean.setExpireTime(System.currentTimeMillis());
+                    chain.doFilter(request, response);
+                    return;
             }
             // 过期移除该token
             tokenMap.remove(token);
