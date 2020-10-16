@@ -1,7 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfa6b30b-36ae-4660-9e47-d963b2265d68" name="Default Changelist" comment="" />
+    <list default="true" id="cfa6b30b-36ae-4660-9e47-d963b2265d68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/CbelSdk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/bean/BaseBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/bean/CbelReqMessageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/bean/CbelRespMessageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/bean/ClientBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/bean/SecureBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/constant/CbelConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/constant/PropKeyConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/enumerate/CbelErrorEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/exception/CbelException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/secure/Cipher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/secure/impl/SM2CipherImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/transfer/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/transfer/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/transfer/impl/HttpClientImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/transfer/impl/SimpleMessageImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/utils/CbelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/utils/PropUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/utils/SM2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/utils/SM2Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/utils/ServiceLoaderUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/java/com/pab/cbel/sdk/utils/ToolsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/resources/META-INF/services/com.pab.cbel.sdk.secure.Cipher" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/resources/META-INF/services/com.pab.cbel.sdk.transfer.Client" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/main/resources/META-INF/services/com.pab.cbel.sdk.transfer.Message" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/test/java/com/pab/cbel/sdk/CbelSdkTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbel-sdk/src/test/resouces/cbel.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_buffer_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_codec_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_common_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_handler_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_resolver_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_transport_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_projectreactor_addons_reactor_extra_3_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_0_8_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_60.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_60.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_glassfish_javax_el_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_gateway_core_2_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_gateway_2_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_spring_aop_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_spring_beans_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_spring_context_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_spring_core_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_spring_expression_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_spring_web_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_springframework_spring_webflux_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_synchronoss_cloud_nio_multipart_parser_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_synchronoss_cloud_nio_stream_storage_1_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/gateway.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/src/main/java/org/zjx/gateway/service/DynamicRouteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/src/main/java/org/zjx/gateway/service/impl/DynamicRouteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/configuration/FilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/configuration/UserConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/controller/ApplicationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dao/ApplicationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dto/application/AddApplicationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dto/application/QueryAllDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dto/application/UpdateApplicationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/filter/MyServletResponseWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/filter/TokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/ApplicationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/impl/ApplicationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/utils/UserBeanUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/vo/application/AddApplicationVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/vo/application/QueryAllVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/vo/user/LoginVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependencies/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dependencies/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/org/zjx/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/org/zjx/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/springcloud/template/RegisterServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springcloud/template/RegisterServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/springcloud/template/T.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/springcloud/template/TomcatTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/constant/UcErrorConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/constant/UcErrorConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dao/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dao/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dao/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dto/user/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/dto/user/LoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/java/org/springcloud/template/usercenter/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-center/src/main/resources/i18n/message_zh_CN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../user-center/src/main/resources/i18n/message_zh_CN.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +162,40 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/springcloud/template/RegisterServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#375#376#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$MAVEN_REPOSITORY$/org/springcloud/template/dependencies/1.0-SNAPSHOT/dependencies-1.0-SNAPSHOT.pom">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,9 +224,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/src/main/java/org/springcloud/template/TomcatTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/springcloud/template/RegisterServerApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/start" />
         <option value="$PROJECT_DIR$/src/main/java/org/springcloud/template/T.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springcloud/template/RegisterServerApplication.java" />
       </list>
     </option>
   </component>
@@ -78,9 +245,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -88,8 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,10 +281,20 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="register-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="register-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -129,7 +305,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gateway" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
@@ -232,16 +408,18 @@
       <workItem from="1574997316018" duration="56000" />
       <workItem from="1594023938109" duration="428000" />
       <workItem from="1594290557937" duration="12000" />
+      <workItem from="1602747520130" duration="2729000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47095000" />
+    <option name="totallyTimeSpent" value="49824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2867804" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28997868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -263,7 +441,7 @@
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -461,16 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springcloud/template/TomcatTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-netflix-eureka-server/2.1.3.RELEASE/spring-cloud-starter-netflix-eureka-server-2.1.3.RELEASE.jar!/META-INF/spring.provides">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -482,20 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="33" column="27" selection-start-line="30" selection-start-column="6" selection-end-line="33" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springcloud/template/dependencies/1.0-SNAPSHOT/dependencies-1.0-SNAPSHOT.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -741,13 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springcloud/template/T.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/start">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -762,19 +909,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springcloud/template/RegisterServerApplication.java">
+    <entry file="file://$PROJECT_DIR$/../user-center/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springcloud/template/T.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springcloud/template/TomcatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../user-center/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springcloud/template/RegisterServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207" />
+        <state relative-caret-position="207">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springcloud/template/dependencies/1.0-SNAPSHOT/dependencies-1.0-SNAPSHOT.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
       </provider>
     </entry>
   </component>

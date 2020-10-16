@@ -2,7 +2,7 @@ package org.springcloud.template.usercenter.dto.role;
 
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
-import org.zxb.common.dto.BaseDTO;
+import org.zxb.web.dto.BaseDTO;
 
 import javax.validation.constraints.NotBlank;
 

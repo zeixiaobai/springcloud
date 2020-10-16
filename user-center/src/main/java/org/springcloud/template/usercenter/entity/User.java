@@ -2,6 +2,7 @@ package org.springcloud.template.usercenter.entity;
 
 
 import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
 import org.springframework.context.annotation.Configuration;
 import org.zxb.entity.BaseEntity;
 
@@ -20,6 +21,7 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "zxb_sys_user")
+@DynamicInsert
 public class User extends BaseEntity {
     /**
      * 用户id

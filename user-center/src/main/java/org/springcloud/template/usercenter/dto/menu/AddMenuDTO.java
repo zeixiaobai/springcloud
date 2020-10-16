@@ -2,7 +2,7 @@ package org.springcloud.template.usercenter.dto.menu;
 
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
-import org.zxb.common.dto.BaseDTO;
+import org.zxb.web.dto.BaseDTO;
 
 /**
  * 添加菜单dto

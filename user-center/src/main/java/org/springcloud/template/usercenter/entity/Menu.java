@@ -1,6 +1,7 @@
 package org.springcloud.template.usercenter.entity;
 
 import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
 import org.zxb.entity.BaseEntity;
 
 import javax.persistence.Column;
@@ -17,6 +18,7 @@ import javax.persistence.Table;
 @Data
 @Entity
 @Table(name = "zxb_sys_menu")
+@DynamicInsert
 public class Menu extends BaseEntity {
     /**
      * 菜单ID

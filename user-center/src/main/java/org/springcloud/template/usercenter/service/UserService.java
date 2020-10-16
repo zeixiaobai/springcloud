@@ -3,6 +3,7 @@ package org.springcloud.template.usercenter.service;
 import org.springcloud.template.usercenter.dto.user.LoginDTO;
 import org.springcloud.template.usercenter.dto.user.RegistryDTO;
 import org.springcloud.template.usercenter.entity.User;
+import org.springcloud.template.usercenter.vo.user.LoginVO;
 
 /**
  * 用户服务类
@@ -30,5 +31,5 @@ public interface UserService {
      * @author zjx
      * @date 2020/07/09 13:53
      */
-    User login(LoginDTO dto);
+    LoginVO login(LoginDTO dto);
 }

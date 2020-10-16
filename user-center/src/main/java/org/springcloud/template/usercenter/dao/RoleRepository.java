@@ -1,7 +1,6 @@
 package org.springcloud.template.usercenter.dao;
 
 import org.springcloud.template.usercenter.entity.Role;
-import org.springcloud.template.usercenter.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

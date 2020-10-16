@@ -14,12 +14,12 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     /**
      * 通过昵称和登录密码查找用户
      *
-     * @param nickName      用户名
+     * @param userName 用户名
      * @param password 密码
      * @return {@link User}
      * @author zjx
      * @date 2020/07/09 17:58
      */
-    User findByUserNameAndPassword(String nickName, String password);
+    User findByUserNameAndPassword(String userName, String password);
 
 }

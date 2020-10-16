@@ -3,12 +3,9 @@ package org.springcloud.template.usercenter.dto.user;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import org.zxb.common.dto.BaseDTO;
+import org.zxb.web.dto.BaseDTO;
 
-import javax.persistence.Column;
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import java.util.Date;
 
 /**
  * 登录dto
@@ -20,7 +17,7 @@ import java.util.Date;
 @ApiModel
 public class LoginDTO extends BaseDTO {
 
-    @ApiModelProperty(example = "zhangsan", required = true)
+    @ApiModelProperty(example = "zjx", required = true)
     @NotBlank(message = "用户名不能为空")
     private String userName;
 

@@ -1,0 +1,36 @@
+{
+  "id": "test",
+  "predicates": [
+    {
+      "name": "Path",
+      "args": {
+        "pattern": "/test/**"
+      }
+    }
+  ],
+  "filters": [
+    {
+      "name": "StripPrefix",
+      "args": {
+        "parts": "1"
+      }
+    },
+    {
+      "name": "Hystrix",
+      "args": {
+        "name": "bca7c9ef-2d07-4f0e-af9d-959ce52c308a",
+        "fallbackUri": "forward:/gateway/hystrix"
+      }
+    },
+    {
+      "name": "RequestRateLimiter",
+      "args": {
+        "redis-rate-limiter.burstCapacity": "3",
+        "keyResolver": "#{@APIKeyResolver}",
+        "redis-rate-limiter.replenishRate": "1"
+      }
+    }
+  ],
+  "uri": "http://localhost:8081/",
+  "order": 0
+}

@@ -3,7 +3,7 @@ package org.springcloud.template.usercenter.dto.user;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import org.hibernate.validator.constraints.Length;
-import org.zxb.common.dto.BaseDTO;
+import org.zxb.web.dto.BaseDTO;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
